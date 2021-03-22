@@ -131,6 +131,15 @@ $(function () {
         }, 1500);
     });
 
+    //Animate the scroll to yop
+    $('.get-started').on('click', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: 1000,
+        }, 1500);
+    });
+
 
     //=====  WOW active
 
