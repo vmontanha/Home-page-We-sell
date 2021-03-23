@@ -83,7 +83,7 @@ h6 {
   margin: 0px; }
 
 h1 {
-  font-size: 89px; }
+  font-size: 77px; }
 
 h2 {
   font-size: 36px; }
@@ -751,8 +751,9 @@ p {
 /*===== HEADER HERO =====*/
 .header-hero {
   position: relative;
-  z-index: 5;
-  height: 100vh; }
+  z-index: 5; 
+  height: 10vh;
+}
 .header-hero .overlay {
     position: absolute;
     top: 0;
@@ -764,6 +765,43 @@ p {
     opacity: 0.5;
     transition: .5s ease;
     background-color: #000;
+}
+
+.header-footer {
+  position: relative;
+  background-color: #fff;
+  margin-top: 150px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 50px;
+}
+
+.header-footer h2{
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 29px;
+  color: grey;
+  line-height: 50px;
+  text-align: justify;
+}
+
+.header-footer h1{
+  font-family: "Poppins";
+  font-weight: bold;
+  color: grey;
+}
+
+#ws-title {
+  font-family: "Poppins";
+  font-weight: 100;
+  color: #FF9C1A;
+}
+
+#titulo {
+  color: #FF9C1A;
+  font-weight: bold;
+  padding-bottom: 100px;
 }
 
 #particles-1 {
@@ -997,7 +1035,9 @@ p {
     height: 50px;
     line-height: 50px;
     padding: 0 35px;
-    margin-top: 40px; }
+    margin-top: 40px;
+
+  }
     .about-content .main-btn:hover {
       background-position: right center; }
 
