@@ -812,6 +812,18 @@ p {
   height: 100%;
   z-index: -1; }
 
+  @media only screen and (max-width: 576px) and (max-width: 767px) {
+    .header-footer h1 {
+      font-size: 60px; 
+      text-align: center;
+    } 
+    .header-footer h2 {
+      font-size: 25px;
+      line-height: 40px;
+      margin-top: 30px;
+    }
+  }  
+
 .header-hero-content {
   padding-top: 30%;
   text-align: justify;
@@ -997,6 +1009,18 @@ p {
   position: relative;
   z-index: 5; }
 
+  .container-image {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 .about-shape-1 {
   position: absolute;
   top: 0;
@@ -1022,12 +1046,11 @@ p {
   @media (max-width: 767px) {
     .about-shape-2 {
       display: none; } }
-
 .about-content {
   max-width: 480px; }
   .about-content .text {
     margin-top: 15px; }
-  .about-content .main-btn {
+  .about-content .container-image .main-btn {
     background: -webkit-linear-gradient(left, #fe8464 0%, #FF9C1A 50%, #fe8464 100%);
     background: -o-linear-gradient(left, #fe8464 0%, #FF9C1A 50%, #fe8464 100%);
     background: linear-gradient(to right, #fe8464 0%, #FF9C1A 50%, #fe8464 100%);
@@ -1036,7 +1059,6 @@ p {
     line-height: 50px;
     padding: 0 35px;
     margin-top: 40px;
-
   }
     .about-content .main-btn:hover {
       background-position: right center; }
@@ -1534,7 +1556,8 @@ p {
   padding-top: 15px;
   text-align: center; }
   .copyright-content p {
-    color: #fff; }
+    color: #fff; 
+    text-align: center !important;}
   .copyright-content a {
     font-size: 16px;
     color: #fff;
@@ -1545,7 +1568,15 @@ p {
     transition: all 0.3s ease-out 0s; }
     .copyright-content a:hover {
       color: #FE8464; }
-
+      @media only screen and (max-width: 576px) and (max-width: 767px) {
+        .copyright-content p {
+          font-size: 14px;
+          text-align: left; 
+        } 
+        .copyright-content a {
+          font-size: 16px;
+        }
+      }
 /*===== BACK TO TOP =====*/
 .back-to-top {
   font-size: 20px;
